@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background: url(bg1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.earth{
+    height: 300px;
+    width: 300px;
+    background: url(image.jpg) ;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    position: absolute;
+    border-radius: 50%;
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 0px 20px rgb(0, 0, 1), 0px 0px 20px #4069ff;
+    animation: animateEarth 15s linear infinite;
+}
+@keyframes animateEarth
+    {
+        0%{
+            background-position: 0 0;
+        }
+        100%{
+            background-position: -750px 0 ;
+        }
+    }
+
+
+
+
